@@ -1,0 +1,8 @@
+langchain
+chromadb
+streamlit
+python-dotenv
+GitPython
+sentence-transformers
+accelerate 
+bitsandbytes
