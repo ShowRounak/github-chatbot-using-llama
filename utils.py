@@ -16,7 +16,6 @@ load_dotenv()
 allowed_extensions = ['.py', '.ipynb', '.md']
 model_name = "all-MiniLM-L6-v2"
 model_kwargs={'device': 'cpu'}
-llm = 'meta-llama/Llama-2-7b-chat-hf'
 
 def cloning(url):
     current_path = os.getcwd()
@@ -63,6 +62,7 @@ def load_db(texts, embeddings,repo_path,chroma_path):
     return vectordb
 
 def retrieve_results(query,vectordb):
+        llm ='meta-llama/Llama-2-7b-chat-hf'
         tokenizer = AutoTokenizer.from_pretrained(llm)
 
 

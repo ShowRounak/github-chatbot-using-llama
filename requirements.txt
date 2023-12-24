@@ -5,4 +5,4 @@ python-dotenv
 GitPython
 sentence-transformers
 accelerate 
-bitsandbytes
+bitsandbytes == 0.40.2
